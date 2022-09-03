@@ -1,0 +1,12 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.accordian-body {
+    display: flex;
+    background-color: antiquewhite;
+    width: 900px;
+    padding: 30px;
+    margin: 100px auto;
+
+}
