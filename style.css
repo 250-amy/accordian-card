@@ -1,12 +1,99 @@
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Kumbh Sans;
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-.accordian-body {
-    display: flex;
-    background-color: antiquewhite;
-    width: 900px;
-    padding: 30px;
-    margin: 100px auto;
+h1 {
+    margin-bottom: 20px;
+}
 
+.table {
+    padding: 0px;
+    margin-left: -3px;
+
+}
+
+.accordian {
+    background-image: url(/accordian-card/images/bg-pattern-desktop.svg);
+    background-color: white;
+    background-position-x: -29em;
+    background-position-y: -16em;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    box-shadow: 16px 26px 39px 0px rgba(0,0,0,0.3);
+    width: 800px;
+    color: hsl(238, 29%, 16%);
+    border-radius: 22px;
+    padding-left: 0px;
+    padding-right: 55px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    margin: 100px auto;
+}
+
+.hidden {;
+    overflow-x: hidden;
+}
+
+.boximage2 {
+    display: block;
+    position: absolute;
+    margin-left: -105px;
+    margin-top: -220px;
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+
+.boximage {
+    align-content: left;
+    position: relative;
+    display: block;
+    margin-left: -90px;
+    margin-right: 24px;
+}
+
+.accordian .container {
+    position: relative;
+    margin: 10px 10px;
+    padding-right: 35px;
+    padding-left: 35px;
+    font-size: 12px;
+}
+
+.accordian .label {
+    position: relative;
+    padding: 15px 0;
+    font-weight: 700;
+    color: hsl(238, 29%, 16%);
+    cursor: pointer;
+}
+
+.accordian .content {
+    position: relative;
+    color: hsl(238, 29%, 16%);
+    height: 0;
+    text-align: justify;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container.active .content {
+    height: 50px;
+    color: hsl(238, 29%, 16%);
+}
+
+.label .img {
+    position: absolute;
+    top: 45%;
+    right: 0px;
+}
+
+.attribution {
+    font-size: 12px;
+    text-align: center;
+}
+
+.label:hover {
+    color: hsl(14, 88%, 65%);
 }
