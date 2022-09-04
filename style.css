@@ -5,6 +5,11 @@ body {
     background-attachment: fixed;
 }
 
+.accordian-body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 h1 {
     margin-bottom: 20px;
 }
